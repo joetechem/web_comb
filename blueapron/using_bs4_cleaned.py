@@ -1,3 +1,7 @@
+"""
+Pulls recipe titles and short descriptions.
+"""
+
 from urllib2 import urlopen
 import requests
 from bs4 import BeautifulSoup as soup
@@ -18,7 +22,5 @@ for recipe in recipes:
 
 for name in title:
     print(name.text)
-
-
 
 
